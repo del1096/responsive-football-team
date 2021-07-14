@@ -1,19 +1,21 @@
 /* common styles */
+/* top banner :start */
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .top-container{
     width: 100%;
     height: 677px;
-    background-color:  #2D25A0;
-    
+    background-color:  #2D25A0;    
 }
 .top-banner{
     display: flex;
+    flex-direction: row;
 }
 .banner-tittle{
     color: #FFFFFF;
-    width: 380px;
-    height: 230px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    height: auto;
+     font-weight: 700;
     font-size: 50px;
     margin-top: 207px;
     margin-bottom: 140px;
@@ -21,23 +23,175 @@
 }
 .banner-tittle:hover{
     color: gold;
+    font-size: 200%;
+    transition-duration: 2s;
+}
+.top-banner-info{
+    width: 50%;
 }
 .top-banner-info a{
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 15px 24px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 156px;
+}
+.top-banner-info a:hover{
+    background-color: black;
+    color: red;
+   font-size: 1.5em;
+   transition-duration: 2s;    
+}
+.kick-football{
+    width: 50%;
+    
+}
+.kick-football img{
+    width: 100%; 
+    margin-top: 100px;
+}
+
+/* top banner :end */
+/* second banner :start */
+
+.player img{
+    width: 300px;
+    height: 256px;    
+} 
+.player{
+    width: 300px;
+    height: 490px;
+    padding: 15px;
+    border: 2px solid  #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin-top: 70px;
+margin-left: 180px;
+margin-right: 210px;
+grid-column-gap: 30px;
+grid-row-gap: 27px;
+}
+/* second banner :end */
+/* added video section start */
+.added-video{
+    width: 100%;
+    height: 400px;
+    background-color: mediumorchid;
+    margin-top: 70px;
+}
+.highlights{
+    display: flex;
+}
+.thumbnail{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 180px;
+    margin-right: 100px;
+}
+.thumbnail a{
     text-decoration: none;
     background: #E02C6D;
 padding: 15px 24px;
 color: #FFFFFF;
 border-radius: 15px;
-margin-left: 156px;
+}
+.video{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 150px;
 
 }
-.top-banner-info a:hover{
-    background-color: black;
+/* added video section :end */
+/* footer section :start */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.kick-football img{
-    width: 556px;
-    height: 438px;
-    margin: 153px 140px 86px 102px;
-  
+.football-logo img{
+        width: 420px;
+        height: 100px;
+      
 }
+.football-logo{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.social-media i{
+color: grey;
+padding: 10px 10px;
 
+}
+.footer-text{
+    margin: 0;
+    width: 230px;
+    height: 30px; 
+    margin-bottom: 50px;   
+}
+/* footer section :end */
+/*---------
+ responsive for mobile device
+ --------*/
+ @media only screen and (max-width: 688px) {
+    .top-container{
+        width: 700px;
+     height: 100%;
+     background-color:  #2D25A0;
+        
+    }
+   .top-banner{
+       display: flex;
+       flex-direction: column;
+   }
+   .top-banner-info{
+       width: 100%;
+   }
+    .kick-football{
+       width: 50%;
+   }
+
+   .banner-tittle {
+    font-size: 50px;
+    margin-top: 92px;
+    margin-bottom: 140px;
+    margin-left: 53px;
+   }
+   .top-banner-info a {
+        margin-left: 57px;
+     }
+   .top-banner-info a{
+       position: absolute;
+       top: 50%;
+       left: 0px;
+   }
+      .players{
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .added-video{
+        height: 100%;
+        width: 700px;
+    }
+
+   .highlights{
+       display: flex;
+       flex-direction: column;
+   }
+.thumbnail, .video{
+    margin-left: 10%;
+   }
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    
+   }
+}

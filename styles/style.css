@@ -191,7 +191,8 @@ padding: 10px 10px;
 
 .footer-section{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    margin-left: 100px;
    }
 }
+/* responsive done  */
